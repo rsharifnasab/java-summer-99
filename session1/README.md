@@ -99,6 +99,9 @@ int l = s.length(); // this is method called on Object s
 Scanner sc = new Scanner(System.in);
 int n = sc.nextInt(); // method call
 
+```
+
+
 + what is object, instance, field, method
 + method
 + static?
