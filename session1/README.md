@@ -114,6 +114,6 @@ int n = sc.nextInt(); // method call
 + compile helloworld (`Hello.java`) with javac
 + write an input/output application with Scanner, System.out.println
 + search about `nextLine()` vs`next()` in Scanner
-+ design a class for Electronic device and add necesseray fields.
++ design a class for Electronic device and add necessary fields.
 + write an static method that get two Electronic device and compare their prices (return int or print or anything), use this method in main
 
