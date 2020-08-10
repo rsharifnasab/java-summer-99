@@ -11,6 +11,7 @@
 + reivew:
    + String, array, foreach 
    + struct -> class
+   + final (change content? change id?)
 
 + multiple classes in file 
 + public class in file 
