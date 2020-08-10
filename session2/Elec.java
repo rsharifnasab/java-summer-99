@@ -12,6 +12,9 @@ public class Elec {
     else
       return 0;
   }
+  // todo1: move to ElectronicDevice class
+  // todo2: make it non-static
+
   public static void main(String[] args) {
     ElectronicDevice e1 = new ElectronicDevice();
     e1.price = 100;
