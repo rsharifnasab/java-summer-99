@@ -15,6 +15,7 @@
 
 + multiple classes in file 
 + public class in file 
++ main in non-static class
 
 + has A
    1. engine and vehicle
@@ -41,5 +42,3 @@
 + toString
 
 + extends (is A)
-
-
