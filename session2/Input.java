@@ -10,6 +10,6 @@ public class Input {
 
     System.out.println("s1: " + s1);
     System.out.println("s2: '" + s2 + "'");
-    System.out.println("s2: " + s3);
+    System.out.println("s3: " + s3);
   }
 }

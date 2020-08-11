@@ -15,7 +15,7 @@
 
 + multiple classes in file 
 + public class in file 
-+ main in non-static class
++ main in non-public class
 
 + has A
    1. engine and vehicle
