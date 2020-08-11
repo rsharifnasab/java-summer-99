@@ -42,3 +42,25 @@
 + toString
 
 + extends (is A)
+
+
+
+## homework 
++ create a class for money
+   1. save an integer for amount of money (rials)
+   2. methods for getAsDollar, getAsRial
+   3. static field: DollarPrice
+   4. constructor: set rials
+   5. static method: set dollar price
+   6. this code should compile and work well
+   ```java
+   Money.setDollarPrice(4_200_0); //static 
+
+   Money m = new Money(1500); // 1500 rials!
+   double dD = m.getAsDollar(); // returns 1500 / 42000
+   int rials = m.getAsRial(); // return 1500  
+   
+   Money.setDollarPrice(23_000_0);
+   double dB = m.getAsDollar(); // return 1500 / 230000
+   
+   ```
