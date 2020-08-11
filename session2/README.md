@@ -57,10 +57,10 @@
    Money.setDollarPrice(4_200_0); //static 
 
    Money m = new Money(1500); // 1500 rials!
-   double dD = m.getAsDollar(); // returns 1500 / 42000
+   double dD = m.getAsDollar(); // returns 1500 / 4 200 0
    int rials = m.getAsRial(); // return 1500  
    
    Money.setDollarPrice(23_000_0);
-   double dB = m.getAsDollar(); // return 1500 / 230000
+   double dB = m.getAsDollar(); // return 1500 / 23 000 0
    
    ```
