@@ -4,9 +4,30 @@
    2. constructor 
    3. initialization block (and static)
 
-+ private, public, getter, setter (encapsulation)
++ encapsulation 
+   1. private
+   2. public
+   3. package access 
+   4. getter
+   5. setter
 
-+ equals
-+ toString
++ special methods 
+   + toString
+   + equals
+   + hashcode 
 
-+ extends (is A)
++ package, import, classpath 
+
++ wrapper class
+
++ inheritance
+   + review "has a"
+   + extends "is A"
+ 
+   + extends Object
+   + toString and hashcode .. 
+
+   + abstract class 
+   + interface 
+
++ polymorphism 
