@@ -1,4 +1,8 @@
 
++ review 
+  + solve money program 
+  + talk about exception: NoSuchElementException
+
 + initialize
    1. inline
    2. constructor 
@@ -19,6 +23,7 @@
 + package, import, classpath 
 
 + wrapper class
+  + `int` vs `Integer`
 
 + inheritance
    + review "has a"
