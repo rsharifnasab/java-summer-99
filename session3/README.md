@@ -45,9 +45,14 @@
         + internal implement depends on you, save r or area or ...
 
         + override toString 
-        + read about compare double in java
-        + override equals (can get another circle or another Object)
-        (dont mind if you copied some code)
+
+        + read about compare double or abs in java
+        + override equals 
+            + this method argument could be another circle
+                  (or the type Object)
+            + dont mind if you copied some code
+            + you should compare doubles well 
+
         
         + this code should compile:
 ```java
