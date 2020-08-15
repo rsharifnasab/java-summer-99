@@ -47,25 +47,25 @@
         + override toString 
         + read about compare double in java
         + override equals (can get another circle or another Object)
+        (dont mind if you copied some code)
         
         + this code should compile:
 ```java
     Circle c = new Circle(0.3); // r
 
-    double d = c.getDiameter();
-    double r = c.getRadius();
-    double s = c.getArea();
+    double d = c.getDiameter(); // 0.6
+    double r = c.getRadius();   // 0.3
+    double s = c.getArea();     // pi*0.3*0.3
 
     System.out.println(c); // print good info
-    String s = c.toString();
+    String str = c.toString();
 
-    Circle other = new Circle(0.1 + 0.2);
-    if(c.equals(other)){ 
-        System.out.println("they are equals"); // should print this
+    Circle other = new Circle(0.1 + 0.2); // new circle with almost 0.3
+    if (c.equals(other)) {
+      System.out.println("they are equals"); // should print this
     } else {
-        System.out.println("not equals");
+      System.out.println("not equals");
     }
-
 ```
 
 
