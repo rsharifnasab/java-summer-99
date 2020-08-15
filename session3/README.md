@@ -23,24 +23,56 @@
    4. getter
    5. setter
 
-+ special methods 
-   + toString
-   + equals
-   + hashcode 
 
-+ package, import, classpath 
 
-+ wrapper class
-  + `int` vs `Integer`
+## homework
+    1. read about java toString, equals method
+        + [about toString](https://www.javatpoint.com/understanding-toString()-method)
 
-+ inheritance
-   + review "has a"
-   + extends "is A"
- 
-   + extends Object
-   + toString and hashcode .. 
+        + [about equals](https://www.geeksforgeeks.org/overriding-equals-method-in-java/)
 
-   + abstract class 
-   + interface 
+    2. write a class to save information about Circle
+        + should not change after construct 
 
-+ polymorphism 
+        + set private and public methods and fields wisely
+
+        + search about how to use `pi` in java
+        + add this methods: getArea, getRadius, getDiameter
+        
+        + implement at least one constructor: by r 
+        + can you add more constructors? by diameter?
+
+        + internal implement depends on you, save r or area or ...
+
+        + override toString 
+        + read about compare double in java
+        + override equals (can get another circle or another Object)
+        
+        + this code should compile:
+```java
+    Circle c = new Circle(0.3); // r
+
+    double d = c.getDiameter();
+    double r = c.getRadius();
+    double s = c.getArea();
+
+    System.out.println(c); // print good info
+    String s = c.toString();
+
+    Circle other = new Circle(0.1 + 0.2);
+    if(c.equals(other)){ 
+        System.out.println("they are equals"); // should print this
+    } else {
+        System.out.println("not equals");
+    }
+
+```
+
+
+
+
+
+extra: read about has-A (composition) vs is-A (inheritance) 
+         + [good link1](https://www.w3resource.com/java-tutorial/inheritance-composition-relationship.php)
+         + [good link 2](https://www.c-sharpcorner.com/UploadFile/3614a6/is-a-and-has-a-relationship-in-java/)
+
