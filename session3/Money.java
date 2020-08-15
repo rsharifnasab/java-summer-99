@@ -6,9 +6,9 @@ public class Money {
 
   public static void setDollarPrice(int rials) { Money.dollarPrice = rials; }
 
-  public int getAsRial() { return amountInRial; }
+  public int getAsRial() { return /* this. */ amountInRial; }
 
-  public double getAsDollar() { return 1. * this.amountInRial / dollarPrice; }
+  public double getAsDollar() { return 1.0 * this.amountInRial / dollarPrice; }
 
   public static void main(String[] args) {
     Money.setDollarPrice(4_200_0); // static

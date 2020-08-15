@@ -5,8 +5,16 @@
 
 + initialize
    1. inline
-   2. constructor 
+   2. constructor
+      + multi constructor 
+      + constructor chain 
+      + constructor with inline 
+      
    3. initialization block (and static)
+      + block vs inline 
+      + before or after constructor 
+      + static init block 
+      + static constructor?
 
 + encapsulation 
    1. private

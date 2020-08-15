@@ -1,21 +1,31 @@
 class Player {
-  String field1 = "inline";
-  int field2 = 1;
-
-  // no arg constructor
-  public Player() {
-    field1 = "constructor";
-    field2 = 3;
+  static int f = 0;
+  static { System.out.println("static init block"); }
+  { // initialization block
+    System.out.println("init block");
   }
 }
 
 public class Construct {
   public static void main(String[] args) {
-    Player p;
-    System.out.println(p.field1);
+    Player p; // kari nadare be class
+    System.out.println("--1--");
+    Player.f++;
+    System.out.println("--2--");
 
     p = new Player();
-
-    System.out.println(p.field1);
+    p = new Player();
   }
 }
+
+/*
+ * run program
+ * 1- jvm load
+ * 2- load class e havi main (Construct)
+ *  static e Contrucct ejra
+ * 3- ejra line be line
+ * 4- mirese be class e Player
+ *   static e player ro ham ejra mikone (load)
+ *
+ *
+ */
