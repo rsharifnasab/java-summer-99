@@ -49,12 +49,12 @@
      + read about compare double or abs in java
      + override equals 
          + this method argument could be another circle
-               (or the type Object)
+               (or Object)
          + dont mind if you copied some code
-         + you should compare doubles well 
+         + you should compare doubles 
 
 
-​        
+      
    + this code should compile:
 ```java
     Circle c = new Circle(0.3); // r
