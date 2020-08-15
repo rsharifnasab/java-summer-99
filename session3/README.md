@@ -26,35 +26,36 @@
 
 
 ## homework
-    1. read about java toString, equals method
-        + [about toString](https://www.javatpoint.com/understanding-toString()-method)
-
-        + [about equals](https://www.geeksforgeeks.org/overriding-equals-method-in-java/)
-
-    2. write a class to save information about Circle
-        + should not change after construct 
-
-        + set private and public methods and fields wisely
-
-        + search about how to use `pi` in java
-        + add this methods: getArea, getRadius, getDiameter
+1. read about java toString, equals method
+     + [about toString](https://www.javatpoint.com/understanding-toString()-method)
+  
+     + [about equals](https://www.geeksforgeeks.org/overriding-equals-method-in-java/)
+    
+2. write a class to save information about Circle
+     + should not change after construct 
+    
+     + set private and public methods and fields wisely
+    
+     + search about how to use `pi` in java
+     + add this methods: getArea, getRadius, getDiameter
         
-        + implement at least one constructor: by r 
-        + can you add more constructors? by diameter?
+     + implement at least one constructor: by r 
+     + can you add more constructors? by diameter?
+    
+     + internal implement depends on you, save r or area or ...
+    
+     + override toString 
+   
+     + read about compare double or abs in java
+     + override equals 
+         + this method argument could be another circle
+               (or the type Object)
+         + dont mind if you copied some code
+         + you should compare doubles well 
 
-        + internal implement depends on you, save r or area or ...
 
-        + override toString 
-
-        + read about compare double or abs in java
-        + override equals 
-            + this method argument could be another circle
-                  (or the type Object)
-            + dont mind if you copied some code
-            + you should compare doubles well 
-
-        
-        + this code should compile:
+​        
+   + this code should compile:
 ```java
     Circle c = new Circle(0.3); // r
 
