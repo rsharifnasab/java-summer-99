@@ -1,10 +1,17 @@
 public class Circle {
+
+  public static Circle ofArea(double area) {
+    double r = Math.sqrt(area) / Math.PI;
+    Circle c = new Circle(r);
+    return c;
+  }
+
   private final double r;
   public Circle(double r) { // constructors are private and public too
     this.r = r;
   }
 
-  public String toString() { return "circle r is " + r; }
+  public String toString() { return "circle; r is " + r; }
 
   public double getDiameter() { return 2 * r; }
 
@@ -25,6 +32,8 @@ public class Circle {
   }
 
   public static void main(String[] args) {
+
+    Circle ca = Circle.ofArea(1.2);
 
     Circle c = new Circle(0.3); // r
 
