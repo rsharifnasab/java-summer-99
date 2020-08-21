@@ -43,11 +43,3 @@ a++;
  
    + extends Object
    + toString and hashcode .. 
-
-   + abstract class 
-   + interface 
-
-+ polymorphism 
-
-+ git!
-+ maven 
