@@ -1,25 +1,17 @@
+
+
 public class Music {
 
-    int len;
-    String name;
+  int len;
+  String name;
 
+  public Music(int len, String name) {
+    this.len = len;
+    this.name = name;
+    System.out.println("music constructor");
+  }
 
-    /*
-    public Music(int len, String name) {
-        this.len = len;
-        this.name = name;
-    }
-    */
+  public int getLen() { return len; }
 
-
-
-
-    public int getLen() {
-        return len;
-    }
-
-    public String getName() {
-        return name;
-    }
-
+  public String getName() { return name; }
 }
