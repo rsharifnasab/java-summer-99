@@ -1,8 +1,15 @@
 # inheritance 
 
 ### review 
++ review packages 
+```bash 
+javac   -d out    p1/A.java p1/p2/B.java
+java   -cp "out"  p1.p2.B 
+```
+
+
 + review isA 
-+ review `extends` keyword  
++ review `extends` keyword
 + review `extends Object`
 + review super-class, sub-class
 + review override
