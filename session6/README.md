@@ -1,19 +1,4 @@
-# session6 
+# review OOP principles
 
-## review 
-+ interface 
-+ abstract class 
-+ implements, multiple inheritance 
-+ cast 
-+ poly morphism 
-
-+ static field, static method with poly morphism
-
-## generic 
-
-## collections 
-
-
-
-## git?
-## maven?
++ questions 
++ singleton
