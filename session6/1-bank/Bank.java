@@ -10,6 +10,8 @@ class UserAccount {
   */
   private int balance;
 
+  private boolean isSuspended;
+
   /**
     one paramter constructor
     it get the name and set it
@@ -18,6 +20,7 @@ class UserAccount {
   public UserAccount(String userName) {
     this.userName = userName;
     this.balance = 0;
+    this.isSuspended = false;
   }
 
   /**
@@ -44,7 +47,7 @@ class UserAccount {
     if source account doesn't have enough money, return false
   */
   public boolean moveMoneyTo(UserAccount dest, int amount) {
-    if (this.haveMoney(amount)) {
+    if (this.haveMoney(amount) && !this.isSuspended && !dest.isSuspended) {
       dest.balance += amount;
       this.balance -= amount;
       return true;
@@ -56,8 +59,15 @@ class UserAccount {
     return a print friendly string about status of this user
   */
   public String toString() {
-    return "UserAccount " + this.userName + " : " + this.balance;
+    return "UserAccount " + (isSuspended ? "suspended " : "") + this.userName +
+        " : " + this.balance;
   }
+
+  public void suspend() { this.isSuspended = true; }
+
+  public void unSuspend() { this.isSuspended = false; }
+
+  public boolean getSuspended() { return this.isSuspended; }
 }
 
 public class Bank {
@@ -93,6 +103,8 @@ public class Bank {
   public String getReport() {
     String report = "report of " + this.name + "\n";
     for (int i = 0; i < numberOfAccounts; i++) {
+      if (accounts[i].getSuspended())
+        continue;
       report += accounts[i].toString() + "\n";
     }
     report += "-------------\n";
@@ -124,12 +136,16 @@ public class Bank {
     bank.addAccount(new UserAccount("ali", 100));
     bank.addAccount(new UserAccount("roozbeh", 30));
     bank.addAccount(new UserAccount("mohammad"));
+
+    bank.getAccount("roozbeh").suspend();
+
     System.out.print(bank.getReport());
 
     bank.getAccount("roozbeh").moveMoneyTo(bank.getAccount("mohammad"), 50);
     System.out.print(
         bank.getReport()); // nothing chaned, roozbeh didnt have enough money
 
+    bank.getAccount("roozbeh").unSuspend();
     bank.getAccount("ali").moveMoneyTo(bank.getAccount("mohammad"), 50);
     System.out.print(bank.getReport()); // the money moved
   }
