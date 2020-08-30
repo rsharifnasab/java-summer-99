@@ -48,7 +48,7 @@
 + can't use specific behavior of type, because it's unknown 
 + type parameter `<V>`
 + generic method
-+ why not use Object?
++ why not use Object? (java 1-4)
 ```java
     public static <V> V f(V v){
         return v;
