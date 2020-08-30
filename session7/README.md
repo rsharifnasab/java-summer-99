@@ -47,6 +47,18 @@
 + same as poly-morphism! 
 + can't use specific behavior of type, because it's unknown 
 + type parameter `<V>`
++ generic method
++ why not use Object?
+```java
+    public static <V> V f(V v){
+        return v;
+    }
+```
+
++ now we use wrapper classes!
+
++ generic class
++ erasure, Object, cast
 
 ## collections 
 + we want to store objects 
@@ -60,4 +72,6 @@
 + use map with `get(key)`
 + different implementations: hashSet, hashMap, treeSet, ..
 + iterator, iterable (interface), for-each
+
+![](https://dzone.com/storage/temp/1821372-class-and-interface-hierarchy.png)
 
