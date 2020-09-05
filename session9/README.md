@@ -1,6 +1,7 @@
 # session 8
 
 ## review exception handling 
++ exercises
 
 + generic 
 + method or class that can act on different types
@@ -9,7 +10,7 @@ String f(String value){
     return value;
 }
 Integer f(Integer value){
-    return value+1;
+    return value /*+1*/;
 }
 Student f(Student value){
     return value;
