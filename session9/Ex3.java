@@ -20,6 +20,7 @@ public class Ex3 {
         System.out.println(elems[i]);
       }
     }
+    V[] arr = new V[10];
   }
 
   public static void main(String[] args) {

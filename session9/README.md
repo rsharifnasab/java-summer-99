@@ -1,9 +1,8 @@
-# session 8
+# session 9
 
-## review exception handling 
-+ exercises
++ review exception handling with exercises
 
-+ generic 
++ review generic 
 + method or class that can act on different types
 ```java
 String f(String value){
@@ -32,6 +31,8 @@ Student f(Student value){
 
 + generic class
 + erasure, Object, cast
+
++ generic class
 
 ## collections 
 + we want to store objects 
